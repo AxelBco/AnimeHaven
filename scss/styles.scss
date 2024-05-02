@@ -1,9 +1,5 @@
-* {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box; 
-}
-
+@import "html/reset";
+@import"utilidades/variables";
 /* estilos de header */
  header {
     .header-container {
@@ -12,7 +8,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-color: #212121;
+        background-color: $color-principal;
         .header-text {
             h1 {
                 font-family: "Yanone Kaffeesatz", sans-serif;
@@ -28,11 +24,11 @@
         }
     }
         .header-text{
-            background-color: #212121;
-            color: aliceblue;
+            background-color: $color-principal;
+            color: $color-fuente1;
         }
         .bg-influenza {
-            background-color: #212121;
+            background-color: $color-principal;
         }
         
         .logo {
@@ -40,7 +36,7 @@
             top: 0;
             left: 0;
             z-index: 1000;
-            background-color: #212121;
+            background-color: $color-principal;
             padding: 10px 20px;
             width: 100%;
             box-shadow: 0 2px 5px rgba(250, 250, 250, 0.1)
@@ -57,30 +53,30 @@
     .navbar-toggler {
         position: relative;
         z-index: 1001;
-        color: aliceblue;
+        color: $color-fuente1;
         .navbar-toggler-icon {
-            color: #556370;
-            background-color: #556370;      
+            color: $color-icon;
+            background-color: $color-icon;      
         }
     }
     .navbar-nav {
         .nav-link {
-            color: aliceblue;
+            color: $color-fuente1;
             font-size: 30px;
             transition: color 1s ease-in; 
         }
         .nav-link:hover{
-            color: #FF204E;
+            color: $color-navhover;
         }
     }
     .navbar-brand {
-        color: aliceblue;
+        color: $color-fuente1;
         font-size: 30px;
         transition: color 1s ease-in;
     
     }
     .navbar-brand:hover {
-        color: #FF204E;
+        color: $color-navhover;
     }
     .social-icons {
         position: absolute;
@@ -89,21 +85,21 @@
         a{
             display: inline-block;
             margin-left: 10px; 
-            color: aliceblue; 
+            color: $color-fuente1; 
             font-size: 24px; 
         }    
     }
  }
 
  body {
-    background-color: #212121;
+    background-color: $color-principal;
     align-items: center;
     h2 {
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
-        color: aliceblue;
+        color: $color-fuente1;
         margin: 30px 100px ;
         font-family: "Raleway", sans-serif;       
     }  
@@ -195,11 +191,11 @@
         margin-top: 20px;
         .form-floating {
             #floatingTextarea2 {
-                width: 1000px;
+                width: 400px;
                 max-width: 100%;
                 height: 200px;
                 background-color: #021f3b09;
-                color: aliceblue;            
+                color: $color-fuente1;            
             }
         }     
     }
@@ -238,7 +234,7 @@
             }
         }
         .carousel-control-prev{
-            color: aliceblue;
+            color: $color-fuente1;
         }
     }
     .carousel-inner{
@@ -308,70 +304,14 @@ button[type="submit"]:hover {
 .shingeki2 {
     grid-column: span 3;
 }
-/* medias querys */
-
-@media (min-width: 576px) {
-    .logo img {
-        max-width: 100px;
-    }
-}
-
-@media (max-width: 576px){
-    main .grid-container {
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-@media (min-width: 576px) and (max-width: 768px) {
-    .grid-container{
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    }
-@media screen and (max-width: 600px) {
-    .imagen-izquierda,
-    .imagen-derecha {
-        width: 50%; 
-        float: none; 
-        margin-right: 0; 
-        text-align: center;
-    }
-}
-
 .meeting {
     font-family: monospace;
 }
 
-@media (max-width: 992px) {
-    .header-container {
-        text-align: center;
-    }
-    
-    .social-icons {
-        display: none;
-    }
-    
-}
-
-@media screen and (max-width: 768px) {
-    .grid-container1 {
-        grid-template-columns: repeat(auto-fit, minmax(calc(50% - 5px), 1fr));
-        gap: 5px;
-    }
-}
-
-@media screen and (max-width: 576px) {
-    .grid-container1 {
-        grid-template-columns: repeat(auto-fit, minmax(calc(100% - 3px), 1fr));
-        gap: 3px;
-    }
-}
-
 footer {
-    color: aliceblue;
+    color: $color-fuente1;
     text-align: center;
     text-transform: uppercase;
     margin: 30%;
-
  }
+ @import"html/mediaquerys";

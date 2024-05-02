@@ -174,7 +174,7 @@ main .form-container {
   margin-top: 20px;
 }
 main .form-container .form-floating #floatingTextarea2 {
-  width: 1000px;
+  width: 400px;
   max-width: 100%;
   height: 200px;
   background-color: rgba(2, 31, 59, 0.0352941176);
@@ -281,7 +281,17 @@ button[type=submit]:hover {
   grid-column: span 3;
 }
 
-/* medias querys */
+.meeting {
+  font-family: monospace;
+}
+
+footer {
+  color: aliceblue;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 30%;
+}
+
 @media (min-width: 576px) {
   .logo img {
     max-width: 100px;
@@ -308,10 +318,6 @@ button[type=submit]:hover {
     text-align: center;
   }
 }
-.meeting {
-  font-family: monospace;
-}
-
 @media (max-width: 992px) {
   .header-container {
     text-align: center;
@@ -331,12 +337,6 @@ button[type=submit]:hover {
     grid-template-columns: repeat(auto-fit, minmax(calc(100% - 3px), 1fr));
     gap: 3px;
   }
-}
-footer {
-  color: aliceblue;
-  text-align: center;
-  text-transform: uppercase;
-  margin: 30%;
 }
 
 /*# sourceMappingURL=main.css.map */
