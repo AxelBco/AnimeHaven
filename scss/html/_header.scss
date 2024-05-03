@@ -1,0 +1,90 @@
+//estilos de header general
+header {
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: $color-principal;
+        .header-text {
+            h1 {
+                font-family: $header-font ;
+                font-size: 80px;
+                margin: 60px 0px 0px ;
+                font-style: oblique;
+                transition: color 1s ease;   
+            }
+            h1:hover {
+              color: brown;  
+              transform: scale(1.1);
+            }
+        }
+    }
+        .header-text{
+            background-color: $color-principal;
+            color: $color-fuente1;
+        }
+        .bg-influenza {
+            background-color: $color-principal;
+        }
+        
+        .logo {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            background-color: $color-principal;
+            padding: 10px 20px;
+            width: 100%;
+            box-shadow: 0 2px 5px rgba(250, 250, 250, 0.1)
+            
+        }
+        .logo img {
+            max-height: 40px;
+        }
+    .navbar-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar-toggler {
+        position: relative;
+        z-index: 1001;
+        color: $color-fuente1;
+        .navbar-toggler-icon {
+            color: $color-icon;
+            background-color: $color-icon;      
+        }
+    }
+    .navbar-nav {
+        .nav-link {
+            color: $color-fuente1;
+            font-size: 30px;
+            transition: color 1s ease-in; 
+        }
+        .nav-link:hover{
+            color: $color-navhover;
+        }
+    }
+    .navbar-brand {
+        color: $color-fuente1;
+        font-size: 30px;
+        transition: color 1s ease-in;
+    
+    }
+    .navbar-brand:hover {
+        color: $color-navhover;
+    }
+    .social-icons {
+        position: absolute;
+        top: 50px;
+        right: 20px; 
+        a{
+            display: inline-block;
+            margin-left: 10px; 
+            color: $color-fuente1; 
+            font-size: 24px; 
+        }    
+    }
+ }

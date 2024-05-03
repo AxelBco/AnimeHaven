@@ -1,0 +1,14 @@
+//estilos de body general
+body {
+    background-color: $color-principal;
+    align-items: center;
+    h2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: $color-fuente1;
+        margin: 30px 100px ;
+        font-family: "Raleway", sans-serif;       
+    }  
+ }

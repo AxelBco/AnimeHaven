@@ -1,0 +1,10 @@
+@mixin footer ($color, $text-align, $text-transform, $margin){
+    margin: $margin;
+    color: $color;
+    text-align: $text-align;
+    text-transform: $text-transform;
+}
+
+footer {
+    @include footer($color-fuente1, center, uppercase, 30%)
+}
