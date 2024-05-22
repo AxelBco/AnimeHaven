@@ -2,7 +2,10 @@
  main {
     .bienvenida {
         text-align: center;
-     }  
+     }
+    .bienvenida h2 {
+        font-size:25px;
+    }  
 
     .grid-container {
         display: grid;
@@ -21,6 +24,7 @@
         border-radius: 10%;
         transition: opacity 0.3s ease, box-shadow 0.3s ease;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        margin: 0px 50px;
         &:hover {
             opacity: 0.8;
             box-shadow: 0px 0px 20px rgba(255, 0, 0, 0.6);      
@@ -29,40 +33,48 @@
     }
     .meeting {
         font-family: monospace;
-    }    
+        font-size: 20px;
+    } 
+       
     .uno {
         grid-column: 1 / 3;
         grid-row: 1 / 4;
         width: 100%;
+        object-fit: contain;
     }
     
     .dos {
         grid-column: 1 / 3;
         grid-row: 4 / 5;
         width: 100%;
+        object-fit: contain;
     }
     
     .tres {
         grid-column: 1 / 6;
-        height: 30%; 
+        height: 300px; 
+        object-fit: contain;
+        width: 90%;
     }
     
     .cuatro {
         grid-column: 3 / 6 ;
         grid-row: 1 / 4;
-        width: 100%;
+        width: 80%;
+        object-fit: contain;
     }
     
     .cinco {
         grid-column: 4/ 6;
         grid-row: 4 / 5;
-        width: 100%;
+        width: 70%;
+        object-fit: contain;
     }
     
     .seis {
         grid-column: 3 / 4;
         grid-row: 4 / 5;
-    
+        object-fit: contain;
     }
     .imagen-izquierda {
         float: left;
@@ -168,7 +180,7 @@
             }              
         }
         h2 {
-            font-size: x-large;
+            font-size: 20px;
             font-style: italic;
         }
         

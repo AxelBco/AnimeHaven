@@ -8,12 +8,20 @@
     main .grid-container {
         display: flex;
         flex-direction: column;
+        width: 100%;
     }
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
     .grid-container{
         flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+}
+@media (min-width:576px) and (max-width: 768px){
+    .grid-container2 {
+        flex-direction: column;
         flex-wrap: wrap;
     }
 }
